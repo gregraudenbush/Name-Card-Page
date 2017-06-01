@@ -1,0 +1,61 @@
+.header{
+    display: inline-block;
+    vertical-align: top;
+    border-style: dotted;
+    border-color: black;
+    width: 8000px;
+    height: 1000px;
+}
+.headerblock{
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+
+.formblock{
+    display: inline-block;
+    vertical-align: top;
+    width: 2000px;
+    margin: 0px;
+}
+.forms{
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+}
+.resultblock{
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+    height: 200px;
+    /*border-style: solid;*/
+    border-color: black;
+    margin-left: 300px;
+    
+
+}
+.namecard{
+    display: inline-block;
+    vertical-align: top;
+    border-style: solid;
+    width: 350px;
+    height: 100px;
+    text-align: center;
+    margin: 5px;
+    word-wrap: break-word;
+    
+}
+
+
+.title{
+    display: inline-block;
+    vertical-align: top;
+    border-bottom-style: Solid;
+    border-bottom-color: grey;
+    width: 300px;
+}
+
+.formdesc{
+     display: inline-block;
+    vertical-align: top;
+}

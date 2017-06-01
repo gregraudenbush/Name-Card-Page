@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Contact card</title>
+			<link rel="stylesheet" type="text/css" href="style.css">
+			<script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+			<script type="text/javascript">
+				$(document).ready(function(){
+                    
+                    
+                    
+                   
+                    $(document).on('click','.btn', function(){
+                        var fullname = "<h1>" + $('.text1').val() + ' ' + $('.text2').val() + "</h1>";
+                        var description = "<p>" + $('.text3').val() + "</p>";
+                        // console.log(fullname);
+                        $('.resultblock').append("<div class='namecard'>" + fullname + description + "<h6>" + "click to see description" + "</div>");
+                        $('p').hide(description);
+                          
+                          
+                          });
+
+                      $(document).on('click','.namecard', function(){
+    				     event.stopPropagation(); 
+                         $(this).children().toggle();
+                        //  $('h1').toggle();
+                        //  $('h6').toggle();
+                        //  $('p').toggle();
+                        })   
+
+                  
+
+                }) 
+
+            </script>
+	</head>
+    <body>
+      
+        
+          
+        <div class="formblock">
+           
+            <div class="forms">
+                <form class="form1">
+                     First Name: 
+                     <input class="text1" type="text" ><br><br>
+                     Last Name: 
+                    <input class="text2" type="text" ><br><br>
+                     
+                     Description: <br>
+                     <textarea class="text3" name="text3" rows="10" cols="30"></textarea>
+                    <br> <br>
+                    <input class="btn" type='button' value='Add User'>
+                    
+            </form>
+            
+            
+        </div>
+                <div class="resultblock">
+
+
+
+
+                </div>
+        
+            
+            
+
+            
+
+
+
+       
+
+    </body>
+
+
+
+
+
+</html>         
